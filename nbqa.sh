@@ -1,0 +1,1 @@
+nbqa black notebooks/*.ipynb
