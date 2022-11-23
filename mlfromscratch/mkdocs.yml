@@ -1,0 +1,26 @@
+site_name: ML-from-Scratch
+repo_url: https://github.com/imanousar/ML-from-Scratch
+site_url: https://imanousar.github.io/ML-from-Scratch
+site_description: Building ML models from scratch for practice.
+site_author: Giannis Manousaridis
+
+extra_css:
+  - custom.css
+
+theme:
+  name: material
+  features:
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+
+plugins:
+  - search
+  - mkdocstrings:
+      watch:
+        - src
+
+nav:
+  - Home: Home/index.md
+  - Modules:
+      - UniLinearRegression: Modules/UniLinearRegression.md

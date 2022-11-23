@@ -2,23 +2,18 @@ import numpy as np
 
 
 class UniLinearRegression:
+    """ Univariate Linear Regression class
+
+    Parameters:
+        epoch (int): The number of epochs.
+        learning_rate (float): The learning rate of the algorithm.
+        random_seed (int): A seed for the initialization of weights.
+
+    Returns:
+        None (none): None
+    """
 
     def __init__(self, epochs=100, learning_rate=0.0001, random_seed=42):
-        """ Univariate Linear Regression class
-
-        Parameters:
-        ----------
-        epoch : int
-            The number of epochs.
-        learning_rate : float
-            The learning rate of the algorithm.
-        random_seed : int
-            A seed for the initialization of weights.
-
-        Returns:
-        ----------
-        None
-        """
 
         self.epochs = epochs
         self.lr = learning_rate
