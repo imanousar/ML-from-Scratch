@@ -1,3 +1,5 @@
 # Tests
 
-pytest or unittest
+```cmd
+python -m pytest --verbose
+```
