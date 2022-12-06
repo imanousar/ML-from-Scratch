@@ -1,5 +1,6 @@
 import numpy as np
 from mlfromscratch.src.unsupervised.KMeans import KMeans
+from mlfromscratch.utils.metrics import silhouette_score
 import matplotlib.pyplot as plt
 
 
@@ -22,17 +23,17 @@ def kmeans():
 
     map_colors = {0: '#1f77b4', 1: '#ff7f0e', 2:  '#007f0e', 3: '#df0a17'}
 
-    plot(map_colors, clusters, points, centroids)
+    score = round(silhouette_score(points, clusters, centroids), 5)
+    plot(map_colors, clusters, points, centroids, score)
 
 
-def plot(map_colors, clusters, points, centroids):
+def plot(map_colors, clusters, points, centroids, score):
     colors = list(map_colors.values())
 
     point_colors = [map_colors[i] for i in clusters]
 
     # Range of values in the x axis
-    x_range = [points[:, 0].min(), points[:, 0].max()]
-    fig = plt.figure(figsize=(7, 5))
+    plt.figure(figsize=(7, 5))
     ax = plt.subplot(111)
     # Scatter the points
     ax.scatter(points[:, 0], points[:, 1], c=point_colors, s=50, lw=0)
@@ -49,6 +50,8 @@ def plot(map_colors, clusters, points, centroids):
     ax.spines['top'].set_visible(False)
     ax.set_title('KMeans: Random Centroid Initialization')
     ax.legend(loc='lower right', scatterpoints=3)
+
+    ax.text(0.5, 0.5, f'Silhouette score: {score}', fontsize=10, ha="center")
 
     plt.show()
 

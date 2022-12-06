@@ -31,5 +31,5 @@ mkdocs gh-deploy
 Test docs
 
 ```
-pytest mlfromscratch/tests/test_docs.py --verbose"
+pytest mlfromscratch/tests/test_docs.py --verbose
 ```

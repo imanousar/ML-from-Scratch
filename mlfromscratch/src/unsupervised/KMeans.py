@@ -71,6 +71,6 @@ class KMeans:
     def predict(self, x):
 
         distances = self.calculate_distances(self.centroids, x)
-        self.clusters = self.update_clusters(distances)
+        clusters = self.update_clusters(distances)
 
-        return self.clusters
+        return clusters
