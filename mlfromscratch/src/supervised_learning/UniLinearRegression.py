@@ -2,7 +2,7 @@ import numpy as np
 
 
 class UniLinearRegression:
-    """ Univariate Linear Regression class
+    """ Univariate Linear Regression class 
 
     Parameters:
         epoch (int): The number of epochs.

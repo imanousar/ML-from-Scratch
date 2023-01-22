@@ -15,7 +15,7 @@ class KMeans:
         None (none): None
     """
 
-    def __init__(self, k=1, max_iter=5, seed=None):
+    def __init__(self, k: int = 1, max_iter: int = 5, seed: int = None):
 
         self.k = k
         self.max_iter = max_iter
@@ -26,7 +26,7 @@ class KMeans:
         Method that initializes the centroids to random values.
         """
         np.random.seed(self.seed)
-        self.centroids = np.random.rand(self.k, 2) * points.max()
+        self.centroids = np.random.rand(self.k, points.shape[1]) * points.max()
 
     def calculate_distances(self, points):
 
