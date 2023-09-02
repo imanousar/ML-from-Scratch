@@ -12,4 +12,3 @@ repos:
     rev: 3.9.2
     hooks:
       - id: flake8
-        exclude: "tests|env|docs"
