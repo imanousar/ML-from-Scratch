@@ -1,4 +1,5 @@
 import numpy as np
+
 from mlfromscratch.utils.metrics import euclidean_dist
 
 

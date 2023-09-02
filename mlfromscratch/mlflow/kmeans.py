@@ -1,12 +1,13 @@
+import logging
+import os
+import sys
+import warnings
+
+import mlflow
 import numpy as np
+
 from mlfromscratch.src.unsupervised.KMeans import KMeans
 from mlfromscratch.utils.metrics import silhouette_score
-
-import warnings
-import mlflow
-import logging
-import sys
-import os
 
 logging.basicConfig(level=logging.WARN)
 logger = logging.getLogger(__name__)

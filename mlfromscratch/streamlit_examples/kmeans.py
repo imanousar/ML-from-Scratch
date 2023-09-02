@@ -1,9 +1,11 @@
-import streamlit as st
-import numpy as np
+import random
+
 import matplotlib.pyplot as plt
+import numpy as np
+import streamlit as st
+
 from mlfromscratch.src.unsupervised.KMeans import KMeans
 from mlfromscratch.utils.metrics import silhouette_score
-import random
 
 
 def main():

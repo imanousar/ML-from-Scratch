@@ -1,6 +1,6 @@
 import pathlib
-import pytest
 
+import pytest
 from mktestdocs import check_md_file
 
 doc_paths = pathlib.Path("mlfromscratch/docs").glob("**/*.md")

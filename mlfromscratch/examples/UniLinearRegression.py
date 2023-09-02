@@ -1,6 +1,7 @@
-
 import numpy as np
-from mlfromscratch.src.supervised_learning.UniLinearRegression import UniLinearRegression
+
+from mlfromscratch.src.supervised_learning.UniLinearRegression import \
+    UniLinearRegression
 
 
 def main():

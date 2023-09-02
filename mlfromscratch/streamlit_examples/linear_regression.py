@@ -1,7 +1,9 @@
-import streamlit as st
-import numpy as np
 import matplotlib.pyplot as plt
-from mlfromscratch.src.supervised_learning.UniLinearRegression import UniLinearRegression
+import numpy as np
+import streamlit as st
+
+from mlfromscratch.src.supervised_learning.UniLinearRegression import \
+    UniLinearRegression
 
 # Title
 st.title("Linear Regression")

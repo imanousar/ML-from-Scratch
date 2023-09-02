@@ -1,7 +1,8 @@
+import matplotlib.pyplot as plt
 import numpy as np
+
 from mlfromscratch.src.unsupervised.KMeans import KMeans
 from mlfromscratch.utils.metrics import silhouette_score
-import matplotlib.pyplot as plt
 
 
 def kmeans():

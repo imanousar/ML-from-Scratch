@@ -1,4 +1,5 @@
-from mlfromscratch.utils.metrics import root_mean_square_error, mean_absolute_error
+from mlfromscratch.utils.metrics import (mean_absolute_error,
+                                         root_mean_square_error)
 
 y1 = [3, -0.5, 2, 7]
 y2 = [2.5, 0.0, 2, 8]
