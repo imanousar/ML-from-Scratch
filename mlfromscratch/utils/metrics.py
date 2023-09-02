@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def root_mean_square_error(y, y_hat) -> float:
+def root_mean_square_error(y: list, y_hat: list) -> float:
     """Root mean square error function. L2 Norm. Euclidean norm.
 
     Parameters:
@@ -43,7 +43,7 @@ def euclidean_dist(x1, x2) -> float:
     """Compute the euclidean distance between two vectors x1, x2.
 
     Parameters:
-        x1 (array): vector x1 
+        x1 (array): vector x1
         x2 (array): vector x2
 
     Returns:
